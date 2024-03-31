@@ -9,12 +9,12 @@ function App() {
   const [desenhos, setDesenhos] = useState([]);
 
   function getBook() {
-    fetch("https://onrender-flask-cors-1.onrender.com")
+    fetch("https://web-x3bl1358fvbi.up-de-fra1-k8s-1.apps.prod.run-on-seenode.com/")
       .then((response) => response.json())
       .then((data) => setLivros(data));
   }
   function getDesenhos() {
-    fetch("https://onrender-flask-cors-1.onrender.com/desenhos")
+    fetch("https://web-x3bl1358fvbi.up-de-fra1-k8s-1.apps.prod.run-on-seenode.com/desenhos")
       .then((response) => response.json())
       .then((data) => setDesenhos(data));
   }
